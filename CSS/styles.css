@@ -1,0 +1,54 @@
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Kirang Haerang', cursive;
+}
+
+header {
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid red;
+}
+
+ul {
+    font-family: PermanentMarker-Regular;
+    font-size: 15px;
+}
+
+.main {
+    background-color: aquamarine;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 5px solid rgb(150, 143, 143);
+    color: rgb(48, 19, 87)
+}
+
+.main_content {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main_content_title {
+    color: rgb(214, 36, 45);
+    font-size: 3cm; 
+    text-align: center; 
+}
+
+.main_content_subtitle {
+    color: rgb(48, 61, 34);
+    font-size: 30px; 
+    font-style: oblique; 
+    text-align: center;
+    opacity: 0.9;
+}
+
+.footer {
+    height: 200px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/uk/7/74/Spider-Man547.jpg);
+    margin: 20px;
+    border: 3px solid red;
+}
