@@ -14,9 +14,25 @@ header {
     border: 3px solid red;
 }
 
+.main_content_image {
+    object-fit: fill ;
+    width: 300px;
+    height: 200px;
+}
+
+header::after {
+    content:"Lets start our story";
+    color: blueviolet;
+    font-size: 1cm;
+}
+
 ul {
     font-family: PermanentMarker-Regular;
     font-size: 15px;
+}
+
+input[type="text"]::placeholder {
+    color: #ff6666;
 }
 
 .main {
@@ -32,23 +48,64 @@ ul {
     font-weight: 600;
 }
 
-.main_content_title {
+/* .main_content_title {
     color: rgb(214, 36, 45);
     font-size: 3cm; 
     text-align: center; 
-}
+} */
 
-.main_content_subtitle {
+/* .main_content_subtitle {
     color: rgb(48, 61, 34);
     font-size: 30px; 
     font-style: oblique; 
     text-align: center;
     opacity: 0.9;
+} */
+
+.main_content_paragraph_first::first-letter {
+    color: rgb(131, 2, 23);
 }
 
-.footer {
+.main_content_paragraph_second::first-line {
+    color: rgb(247, 90, 78);
+    letter-spacing: 5px;
+}
+
+.main_content_paragraph_third::selection {
+    color: darkolivegreen;
+    background-color: darkred;
+}
+
+.main_content_link_inactive {
+    transition: color 2s ease-out;
+    will-change: color;
+    color: rgb(103, 235, 16);
+    font-size: 30px;
+    pointer-events: none;
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -ms-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+}
+
+.main_content_paragraph_fifth {
+    text-indent: 30px;
+    visibility: hidden;
+}
+
+.main_content_link_active:hover + .main_content_paragraph_fifth {
+    visibility: visible;
+    word-spacing:8px;
+}
+
+.main_content_paragraph_six {
+    width: 230px;
+    word-wrap: inherit;
+}
+
+/* .footer {
     height: 200px;
     background-image: url(https://upload.wikimedia.org/wikipedia/uk/7/74/Spider-Man547.jpg);
     margin: 20px;
     border: 3px solid red;
-}
+} */
